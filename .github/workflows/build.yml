@@ -74,7 +74,7 @@ jobs:
           chmod +x ./gradlew
           ./gradlew buildPlugin
 
-      # Prepare plugin archive content for creating artifact
+      # Prepare plugin archive content for creating artifact 
       - name: Prepare Plugin Artifact
         id: artifact
         shell: bash
