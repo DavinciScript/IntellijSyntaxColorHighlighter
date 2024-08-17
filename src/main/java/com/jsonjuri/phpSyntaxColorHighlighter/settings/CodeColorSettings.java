@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) Elior "Mallowigi" Boukhobza & jsonjuri
+ * Copyright (c) DavinciScript & Bozhidar Slaveykov
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,9 +24,9 @@
  *
  */
 
-package com.jsonjuri.daviSyntaxColorHighlighter.settings;
+package com.bobicloudvision.daviSyntaxColorHighlighter.settings;
 
-import com.jsonjuri.daviSyntaxColorHighlighter.CodeColorAnnotator;
+import com.bobicloudvision.daviSyntaxColorHighlighter.CodeColorAnnotator;
 import com.intellij.icons.AllIcons;
 import com.intellij.lang.Language;
 import com.intellij.openapi.editor.DefaultLanguageHighlighterColors;
