@@ -23,7 +23,7 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
-  
+
 jobs:
 
   # Prepare environment and build the plugin
@@ -75,7 +75,9 @@ jobs:
 
       # Build plugin
       - name: Build plugin
-        run: ./gradlew buildPlugin
+        run: |
+          chmod +x ./gradlew
+          ./gradlew buildPlugin
 
       # Prepare plugin archive content for creating artifact
       - name: Prepare Plugin Artifact
