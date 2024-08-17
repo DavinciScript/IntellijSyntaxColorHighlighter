@@ -9,4 +9,6 @@ public class MyLanguageFileTypeFactory extends FileTypeFactory {
     public void createFileTypes(@NotNull FileTypeConsumer fileTypeConsumer) {
         fileTypeConsumer.consume(MyLanguageFileType.INSTANCE, MyLanguageFileType.INSTANCE.getDefaultExtension());
     }
+
+
 }
