@@ -1,0 +1,18 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.jsonjuri.daviSyntaxColorHighlighter</id>
+    <name>DAVI Syntax Color Highlighter</name>
+    <vendor email="jsonjuri@gmail.com" url="https://github.com/jsonjuri">JsonJuri</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <resource-bundle>messages.OptionsBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <additionalTextAttributes scheme="Default" file="colorSchemes/daviAddonsDefault.xml"/>
+        <additionalTextAttributes scheme="Darcula" file="colorSchemes/daviAddonsDarcula.xml"/>
+        <annotator language="DAVI" implementationClass="com.jsonjuri.daviSyntaxColorHighlighter.CodeColorAnnotator"/>
+        <colorSettingsPage implementation="com.jsonjuri.daviSyntaxColorHighlighter.settings.CodeColorSettings"/>
+    </extensions>
+</idea-plugin>
