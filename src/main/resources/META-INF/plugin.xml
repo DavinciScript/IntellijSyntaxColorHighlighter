@@ -12,7 +12,11 @@
     <extensions defaultExtensionNs="com.intellij">
         <additionalTextAttributes scheme="Default" file="colorSchemes/daviAddonsDefault.xml"/>
         <additionalTextAttributes scheme="Darcula" file="colorSchemes/daviAddonsDarcula.xml"/>
-        <annotator language="DAVI" implementationClass="com.bobicloudvision.daviSyntaxColorHighlighter.CodeColorAnnotator"/>
+        <annotator language="Davi" implementationClass="com.bobicloudvision.daviSyntaxColorHighlighter.CodeColorAnnotator"/>
         <colorSettingsPage implementation="com.bobicloudvision.daviSyntaxColorHighlighter.settings.CodeColorSettings"/>
+
+        <fileTypeFactory implementation="com.bobicloudvision.MyLanguageFileTypeFactory"/>
+        <language id="Davi" name="Davi" fileExtensions="davi"/>
+
     </extensions>
 </idea-plugin>

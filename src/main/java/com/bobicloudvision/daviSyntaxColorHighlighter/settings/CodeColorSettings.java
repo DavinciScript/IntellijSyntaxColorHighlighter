@@ -176,7 +176,8 @@ public final class CodeColorSettings extends BaseColorSettings {
     @NotNull
     @Override
     public String getDemoText() {
-        return "<use>namespace</use> Foo\\Bar\\Baz;\n" +
+        return "<?davi \n" +
+                "<use>namespace</use> Foo\\Bar\\Baz;\n" +
                 "\n" +
                 "<use>use</use> <class>SomeClass</class>" +
                 "\n" +
@@ -233,7 +234,7 @@ public final class CodeColorSettings extends BaseColorSettings {
     @NotNull
     @Override
     public String getDisplayName() {
-        return "DAVI Colors";
+        return "Davi";
     }
 
     @Override
